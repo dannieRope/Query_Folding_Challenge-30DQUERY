@@ -16,7 +16,7 @@ Power Query's Mashup engine creates the SQL statement by combining all the M sta
 
 Power folding can be done using the click function or by clicking on the transformation feature in the power query UI. However, for the purpose of learning M code, I decided to spend my time in the advanced query editor writing M code to solve the problems.
 
-Every M code written is properly documented. Click [here](https://github.com/dannieRope/Query_Folding_Challenge-30DQUERY.git) to access the scripts.
+Every M code written is properly documented. Click [here](PowerQuerMScripts) to access the scripts.
 
 You can follow @notaboutthecell on twitter. You can also participate in the challenge [here](https://t.co/5T5RfnmHfC)
 
