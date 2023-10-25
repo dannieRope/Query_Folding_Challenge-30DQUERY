@@ -10,7 +10,7 @@ The #30DQUERY challenge is about power query folding. But what does the power qu
 
 ## What is Power Query Folding?
 
-According to Microsoft.com, query folding is the ability for a Power Query query to generate a single query statement to retrieve and transform source data.
+According to Microsoft.com, query folding is the ability for a Power Query to generate a single query statement to retrieve and transform source data.
 
 Power Query's Mashup engine creates the SQL statement by combining all the M statements behind the transformation.
 
