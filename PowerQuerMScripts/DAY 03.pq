@@ -1,5 +1,5 @@
 let
-    Source = Sql.Databases("DAGDAN\SQLEXPRESS"),
+    Source = Sql.Databases("DAGDAN\SQLEXPRESS"), 
 
     // Import DimProduct Table
     AdventureWorksDW2017 = Source{[Name="AdventureWorksDW2017"]}[Data],
