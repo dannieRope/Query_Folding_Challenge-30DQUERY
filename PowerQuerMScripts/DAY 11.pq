@@ -4,7 +4,7 @@ let
     //Load DimGeography table
     dbo_DimGeography = AdventureWorksDW2017{[Schema="dbo",Item="DimGeography"]}[Data],
     //Load FactInternetSales table
-    dbo_FactInternetSales = AdventureWorksDW2017{[Schema="dbo",Item="FactInternetSales"]}[Data],
+    dbo_FactInternetSales = AdventureWorksDW2017{[Schema="dbo",Item="FactInternetSales"]}[Data], 
     //Load Customer table
     dbo_DimCustomer = AdventureWorksDW2017{[Schema="dbo",Item="DimCustomer"]}[Data],
     //Rename GeographyKey to GeographyKey1
