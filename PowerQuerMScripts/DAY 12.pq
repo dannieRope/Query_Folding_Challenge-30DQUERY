@@ -1,7 +1,7 @@
 let
     Source = Sql.Databases("DAGDAN\SQLEXPRESS", [CreateNavigationProperties=false]),
     WideWorldImportersDW = Source{[Name="WideWorldImportersDW"]}[Data],
-    //Load Employee table
+    //Load Employee table 
     Dimension_Employee = WideWorldImportersDW{[Schema="Dimension",Item="Employee"]}[Data],
     //Load Customer table
     Dimension_Customer = WideWorldImportersDW{[Schema="Dimension",Item="Customer"]}[Data],
