@@ -7,7 +7,7 @@ let
         "CustomerKey",
         "EmailAddress",
         "EnglishOccupation",
-        "YearlyIncome",
+        "YearlyIncome", 
         "BirthDate"
     }),
     //Filter BirthDate
