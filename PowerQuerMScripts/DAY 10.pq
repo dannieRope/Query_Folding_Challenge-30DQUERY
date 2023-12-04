@@ -6,7 +6,7 @@ let
     //Keep relavant column
     #"Removed Other Columns" = Table.SelectColumns(Dimension_Employee,{"WWI Employee ID", "Employee"}),
     //Remove duplicates
-    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"),
+    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"), 
     //Get employees with even employeeIDs
     #"Even Employees" = Table.SelectRows(#"Removed Duplicates",each Number.Mod([WWI Employee ID],2)=0),
     //Get employees with odd employeeIds
