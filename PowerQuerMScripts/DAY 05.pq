@@ -5,7 +5,7 @@ let
     Dimension_Employee = WideWorldImportersDW{[Schema="Dimension",Item="Employee"]}[Data],
     //add relevant columns
     #"Remove Other Columns" = Table.SelectColumns(Dimension_Employee,{
-        "Employee Key",
+        "Employee Key", 
         "Employee",
         "Is Salesperson",
         "Valid From",
