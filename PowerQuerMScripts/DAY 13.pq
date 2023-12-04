@@ -1,7 +1,7 @@
 let
     Source = Sql.Databases("DAGDAN\SQLEXPRESS", [CreateNavigationProperties=false]),
     AdventureWorksDW2017 = Source{[Name="AdventureWorksDW2017"]}[Data],
-    //Import DimEmployee Table
+    //Import DimEmployee Table 
     dbo_DimEmployee = AdventureWorksDW2017{[Schema="dbo",Item="DimEmployee"]}[Data],
     //Select Relavant columns to answer business question
     #"Remove Other Columns" = Table.SelectColumns(dbo_DimEmployee,{
