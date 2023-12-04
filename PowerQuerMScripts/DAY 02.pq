@@ -5,7 +5,7 @@ let
     // Import DimReseller table
     dbo_DimReseller = AdventureWorksDW2017{[Schema="dbo",Item="DimReseller"]}[Data],
     //Select the relevant columns
-    #"Remove Other Columns" =Table.SelectColumns(dbo_DimReseller,{
+    #"Remove Other Columns" =Table.SelectColumns(dbo_DimReseller,{ 
         "ResellerKey",
         "GeographyKey",
         "BusinessType",
