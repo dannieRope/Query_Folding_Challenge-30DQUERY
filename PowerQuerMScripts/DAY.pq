@@ -6,6 +6,6 @@ let //Source
     //List Columns of text type
     ListColumns = Table.ColumnsOfType(#"Dimension_Stock Item",{Text.Type}),
     //Select columns of text type
-    ColumnsTextype = Table.SelectColumns(#"Dimension_Stock Item",ListColumns)
+    ColumnsTextype = Table.SelectColumns(#"Dimension_Stock Item",ListColumns) 
 in
     ColumnsTextype
