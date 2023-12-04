@@ -6,4 +6,4 @@ let
     #"Merged Columns" = Table.CombineColumns(#"Removed Other Columns",{"FirstName", "MiddleName", "LastName"},Combiner.CombineTextByDelimiter(" ", QuoteStyle.None),"FullName"),
     #"Filtered Rows" = Table.SelectRows(#"Merged Columns", each [BirthDate] >= #date(1974, 1, 1) and [BirthDate] <= #date(1974, 12, 31))
 in
-    #"Filtered Rows"
+    #"Filtered Rows" 
