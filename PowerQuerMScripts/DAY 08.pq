@@ -1,6 +1,6 @@
 let //source
     Source = Sql.Databases("DAGDAN\SQLEXPRESS", [CreateNavigationProperties=false]),
-    WideWorldImportersDW = Source{[Name="WideWorldImportersDW"]}[Data],
+    WideWorldImportersDW = Source{[Name="WideWorldImportersDW"]}[Data], 
     //Import Fact.Sales table
     Fact_Sale = WideWorldImportersDW{[Schema="Fact",Item="Sale"]}[Data],
     //Select Relevant Columns
