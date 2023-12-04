@@ -2,7 +2,7 @@ let
     Source = Sql.Databases("DAGDAN\SQLEXPRESS", [CreateNavigationProperties=false]),
     AdventureWorksDW2017 = Source{[Name="AdventureWorksDW2017"]}[Data],
     dbo_DimCustomer = AdventureWorksDW2017{[Schema="dbo",Item="DimCustomer"]}[Data],
-    #"Remove Other Columns:DimCustomer" = Table.SelectColumns(dbo_DimCustomer,{
+    #"Remove Other Columns:DimCustomer" = Table.SelectColumns(dbo_DimCustomer,{ 
         "CustomerKey",
         "EnglishEducation",
         "Gender",
