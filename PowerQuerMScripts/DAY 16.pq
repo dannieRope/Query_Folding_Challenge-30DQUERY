@@ -1,7 +1,7 @@
 let
     Source = Sql.Databases("DAGDAN\SQLEXPRESS", [CreateNavigationProperties=false]),
     WideWorldImportersDW = Source{[Name="WideWorldImportersDW"]}[Data],
-    //Import Fact_sales table and relevant columns
+    //Import Fact_sales table and relevant columns 
     Fact_Sale = WideWorldImportersDW{[Schema="Fact",Item="Sale"]}[Data][[Invoice Date Key],[Profit]],
     //Add YYYYMM column
     Add_YYYYMM = Table.AddColumn(Fact_Sale,"YYYYMM", each Date.Year([Invoice Date Key])* 100 + Date.Month([Invoice Date Key]) ,Number.Type),
