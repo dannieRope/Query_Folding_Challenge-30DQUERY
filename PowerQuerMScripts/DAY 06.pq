@@ -2,7 +2,7 @@ let //Source
     Source = Sql.Databases("DAGDAN\SQLEXPRESS"),
     WideWorldImportersDW = Source{[Name="WideWorldImportersDW"]}[Data],
     //Import Dimension stock Item table
-    #"Dimension_Stock Item" = WideWorldImportersDW{[Schema="Dimension",Item="Stock Item"]}[Data],
+    #"Dimension_Stock Item" = WideWorldImportersDW{[Schema="Dimension",Item="Stock Item"]}[Data], 
     //Select Relevant Columns
     #"Remove Other Columns" = Table.SelectColumns(#"Dimension_Stock Item",{
         "Stock Item Key",
