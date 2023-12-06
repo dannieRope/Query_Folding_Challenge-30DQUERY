@@ -4,7 +4,7 @@
 ## Power Query Folding Challenge
 
 It is part of my goals this month, October 2023, to learn M code to help me clean and transform data in power query effectively and at ease.
-Finding a resources for me was not an easy one until I found this challenge #30DQUERY on twitter(X) initiated by @notaboutthecell. 
+Finding resources for me was not an easy one until I found this challenge #30DQUERY on twitter(X) initiated by @notaboutthecell. 
 
 The #30DQUERY challenge is about power query folding. But what does the power query folding mean?
 
